@@ -1,10 +1,12 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import HeroSection from "@/Components/HeroSection/HeroSection";
 
 export default function Home() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  );
+  return ( 
+    <div>
+      <main>
+        <HeroSection/>
+      </main>
+    </div>
+  )
 }
