@@ -2,13 +2,12 @@
 
 export function Features () {
     return (
-        <section className="bg-[#F8FAFC] py-16">
+        <section id="features" className="bg-[#F8FAFC] py-16">
 
             <div className="container mx-auto px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-14">Tudo que você precisa, e mais!</h2>
             </div>
 
-            {/* gride para os blocos de features */}
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4  px-10 items-stretch">
 
                 <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-start md:items-center min-h-[260px]">
