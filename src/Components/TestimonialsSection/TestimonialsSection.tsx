@@ -1,8 +1,16 @@
 import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
+import { Card, CardContent, CardFooter } from "../ui/card";
+
+interface Testimonial {
+  text: string;
+  name: string;
+  role: string;
+  image: string;
+}
 
 export default function TestimonialsSection() {
-  const testimonials = [
+  const testimonials : Testimonial[] = [
     {
       text: "O AgiliChat transformou nosso atendimento! Respostas rápidas e precisas que impressionaram nossos clientes. Essencial!",
       name: "Maria Silva",
@@ -24,46 +32,50 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section id="testimonials" className="bg-white py-20">
+    <section id="testimonials" className="bg-white py-20 mb-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-12">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-20">
           O que nossos clientes dizem:
         </h2>
 
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {testimonials.map((t, i) => (
-            <div
+          {testimonials.map((t: Testimonial, i: number) => (
+            <Card
               key={i}
-              className="bg-[#F8FAFC] text-gray-900 rounded-2xl shadow-lg p-10 flex flex-col items-center justify-between min-h-[200px] relative"
+              className="bg-[#F8FAFC] shadow-lg flex flex-col relative"
             >
             
-              <div className="absolute -top-6 w-12 h-12 flex items-center justify-center rounded-full">
+              <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-[#F8FAFC]">
                 <FaQuoteLeft size={24} className="text-[#8093F1]" />
               </div>
 
-              <p className="text-sm text-gray-800 mt-6 mb-6 text-center leading-relaxed">
-                {t.text}
-              </p>
+              <CardContent className="pt-12 pb-6 text-center grow">
+                  <p className="text-sm text-gray-700 mt-2 mb-4 text-center leading-relaxed">
+                    {t.text}
+                  </p>
+              </CardContent>
 
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-start items-center mt-auto pt-4 border-t border-gray-300 w-full">
+            
+
+                <CardFooter className="flex flex-col lg:flex-row lg:items-center lg:justify-start items-center w-full">
+                  <div className="w-12 h-12 rounded-full overflow-hidden mb-3 lg:mb-0 lg:mr-3">
+                    <Image
+                      src={t.image}
+                      alt={t.name}
+                      width={50}
+                      height={50}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
                 
-                <div className="w-12 h-12 rounded-full overflow-hidden mb-3 lg:mb-0 lg:mr-3">
-                  <Image
-                    src={t.image}
-                    alt={t.name}
-                    width={50}
-                    height={50}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-               
-                <div className="flex flex-col items-center lg:items-start">
-                  <p className="font-semibold text-sm text-blue-700">{t.name}</p>
-                  <p className="text-xs text-gray-700">{t.role}</p>
-                </div>
-              </div>
-            </div>
+                  <div className="flex flex-col items-center lg:items-start">
+                    <p className="font-semibold text-sm text-[#6B7FE4]">{t.name}</p>
+                    <p className="text-xs text-gray-700">{t.role}</p>
+                  </div>
+                </CardFooter>
+
+            </Card>
           ))}
         </div>
       </div>
