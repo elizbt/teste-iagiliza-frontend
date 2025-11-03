@@ -41,7 +41,7 @@ export default function Navbar() {
       >
 
         <Link 
-          href="#inicio" 
+          href="#home" 
           className="text-lg font-bold text-black shrink-0 whitespace-nowrap"
         >
           AgiliChat
