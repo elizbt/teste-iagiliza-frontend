@@ -2,6 +2,12 @@
 
 Projeto desenvolvido como parte do processo seletivo para a vaga de desenvolvedor frontend. O objetivo principal é demonstrar a construção de uma interface web moderna e responsiva utilizando Next.js e Tailwind CSS.
 
+## 🌐 Deploy
+
+O projeto está hospedado na Vercel e pode ser acessado através do link abaixo:
+
+[https://agilichat.vercel.app/](https://agilichat.vercel.app/)
+
 ## 🚀 Tecnologias Utilizadas
 
 Este projeto foi construído com uma stack moderna focada em performance e experiência do desenvolvedor:
