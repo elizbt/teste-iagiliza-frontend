@@ -26,7 +26,7 @@ Para executar este projeto localmente, siga os passos abaixo.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/elizbt/teste-iagiliza-frontend.git](https://github.com/elizbt/teste-iagiliza-frontend.git)
+    git clone https://github.com/elizbt/teste-iagiliza-frontend.git
     cd teste-iagiliza-frontend
     ```
 
