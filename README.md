@@ -1,79 +1,50 @@
-# Teste Técnico IAgiliza – Frontend (Landing Page)
+# Teste Técnico Frontend - IAgiliza
 
-## Contexto
+Projeto desenvolvido como parte do processo seletivo para a vaga de desenvolvedor frontend. O objetivo principal é demonstrar a construção de uma interface web moderna e responsiva utilizando Next.js e Tailwind CSS.
 
-Você deve desenvolver uma landing page para um produto de chat com IA.
-A página deve ser moderna, responsiva e construída com TypeScript, Vite/NextJS, React e TailwindCSS.
+## 🚀 Tecnologias Utilizadas
 
-O objetivo é avaliar:
-- Organização e clareza do código
-- Uso correto das ferramentas solicitadas
-- Boas práticas de design responsivo
-- Criatividade na apresentação do produto
+Este projeto foi construído com uma stack moderna focada em performance e experiência do desenvolvedor:
 
----
+* **[Next.js](https://nextjs.org/)**: O framework React principal, utilizado para  estrutura do projeto.
+* **[React](https://react.dev/)**: A biblioteca base para a construção das interfaces de usuário.
+* **[TypeScript](https://www.typescriptlang.org/)**: Garante a tipagem estática do código, aumentando a robustez e facilitando a manutenção.
+* **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utility-first para estilização rápida e consistente.
+* **[Shadcn/UI](https://ui.shadcn.com/)**: Biblioteca de componentes usada para construir blocos de UI acessíveis e estilizados.
+* **[React Icons](https://react-icons.github.io/react-icons/)**: Utilizada para a inclusão de ícones na interface.
 
-## Requisitos
+## 💻 Como Executar o Projeto
 
-### Tecnologias obrigatórias
-- TypeScript
-- Vite/NextJS
-- React
-- TailwindCSS
+Para executar este projeto localmente, siga os passos abaixo.
 
-### Funcionalidades obrigatórias
-- Header com nome do produto e menu de navegação
-- Seção principal apresentando o produto de chat de IA (ex: imagem, texto descritivo, CTA)
-- Seção de features destacando 3 ou 4 funcionalidades
-- Seção de depoimentos
-- Seção de planos de assinatura
-- Footer com informações da empresa e links para redes sociais
-- Responsividade (mobile, tablet e desktop)
-- Design agradável e coerente com o tema proposto
+### Pré-requisitos
 
----
+* [Node.js](https://nodejs.org/en/) (versão 20.x ou superior)
+* Um gerenciador de pacotes (`npm`, `yarn` ou `pnpm`)
 
-## O que será avaliado
+### Instalação e Execução
 
-| Critério | Peso (1-10)|
-|-----------|------|
-| Boas práticas (nomes, pastas, commits) | 4 |
-| Organização do código | 6 |
-| Interface bem estruturada | 7 |
-| Uso correto do TypeScript | 8 |
-| Funcionalidades completas | 9 |
-| Layout responsivo com Tailwind | 10 |
-| Explicação do projeto e funcionalidades | 10 |
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/elizbt/teste-iagiliza-frontend.git](https://github.com/elizbt/teste-iagiliza-frontend.git)
+    cd teste-iagiliza-frontend
+    ```
 
-### Desafios Bônus
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+    *(Ou `yarn install` / `pnpm install`)*
 
-| Critério | Peso (1-5)|
-|-----------|------|
-| Escrita do código em inglês | 1 |
-| Implementar tema claro e escuro | 1 |
-| Utilizar componentes ShadcnUI | 2 |
-| Utilizar componentes MagicUI (componentes animados) | 3 |
-| Deploy na Vercel ou similar | 4 |
-| Permitir que um usuário possa criar conta e fazer login (mesmo que sem banco de dados ou com dados mockados) | 5 |
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
----
+4.  Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-## Dicas
+## 📂 Estrutura (Breve Resumo)
 
-- Prefira componentes pequenos e reutilizáveis
-- Tipagem é importante, mas clareza vem primeiro
-
----
-
-## Entrega
-
-- A entrega do projeto deve ser feita em até 7 dias após o recebimento do link desse repositório
-- Faça um fork público desse repositório
-- Adicione seu código à medida em que desenvolve
-- Inclua:
-  - Este README atualizado com instruções reais de execução do seu projeto
-  - Todo o código fonte do seu projeto
-
----
-
-Boa sorte!
+* `src/app/`: Contém as rotas e páginas principais da aplicação (utilizando o App Router do Next.js).
+* `src/components/`: Contém componentes React reutilizáveis.
+* `src/components/ui/`: Componentes específicos do Shadcn/UI.
