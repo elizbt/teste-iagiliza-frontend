@@ -15,7 +15,6 @@ export default function Home() {
         <Features />
         <TestimonialsSection />
         <PricingSection />
-
         <Footer />
       </main>
     </div>

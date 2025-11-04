@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
   return (
     <section id="testimonials" className="bg-white py-20 mb-10">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-20">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-20">
           O que nossos clientes dizem:
         </h2>
 

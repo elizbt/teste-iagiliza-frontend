@@ -18,7 +18,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <Link
-                  href="/termos-de-uso"
+                  href="/terms-of-service"
                   className="text-sm text-gray-700 hover:text-[#B388EB] transition-colors"
                 >
                   Termos de Uso
@@ -26,7 +26,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/politica-de-privacidade"
+                  href="privacy-policy"
                   className="text-sm text-gray-700 hover:text-[#B388EB] transition-colors"
                 >
                   Política de Privacidade

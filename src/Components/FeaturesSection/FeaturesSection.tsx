@@ -17,7 +17,7 @@ interface Feature {
 const featuresList: Feature[] = [
   {
     icon: <FaBrain className="h-8 w-8 text-[#B388EB]" />,
-    title: "Compreensão Avançada",
+    title: "Compreensão avançada",
     items: [
       "Entende intenções, não só palavras",
       "Mantém contexto em longos diálogos",
@@ -26,7 +26,7 @@ const featuresList: Feature[] = [
   },
   {
     icon: <BsClockHistory className="h-8 w-8 text-[#B388EB]" />,
-    title: "Assistente Proativo 24/7",
+    title: "Assistente proativo 24/7",
     items: [
       "Resolve problemas de suporte 24/7",
       "Qualifica leads em tempo real",
@@ -35,7 +35,7 @@ const featuresList: Feature[] = [
   },
   {
     icon: <BsDatabaseCheck className="h-8 w-8 text-[#B388EB]" />,
-    title: "Conhecimento Personalizado",
+    title: "Conhecimento personalizado",
     items: [
       "Integrado aos seus documentos, FAQs e APIs",
       "Respostas 100% alinhadas ao seu negócio",

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import Link from "next/link"; 
+import { Button } from "../ui/button";
 
 interface NavLink {
   name: string;
@@ -19,7 +20,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks:NavLink[] = [
     { name: "Funcionalidades", href: "#features" },
     { name: "Depoimentos", href: "#testimonials" },
     { name: "Planos", href: "#pricings" },
@@ -35,7 +36,7 @@ export default function Navbar() {
           ${
             scrolled
               ? "w-11/12 min-[820px]:w-[65%] py-4"
-              : "w-11/12 min-[820px]:w-[70%] py-5"
+              : "w-11/12 min-[820px]:w-[70%] py-4"
           }
         `}
       >
@@ -47,7 +48,6 @@ export default function Navbar() {
           AgiliChat
         </Link>
 
-      
         <div className="hidden min-[820px]:flex items-center min-[820px]:gap-4 lg:gap-8 text-black font-medium">
           {navLinks.map((link) => (
             <Link
@@ -61,19 +61,19 @@ export default function Navbar() {
         </div>
 
         <div className="hidden min-[820px]:flex items-center shrink-0">
-          <Link
-            href="#planos"
+          <Button
+            asChild
             className="bg-[#8093F1] text-white rounded-full font-medium hover:bg-[#5C66C0] transition whitespace-nowrap
-            min-[820px]:text-sm lg:text-base min-[820px]:px-4 min-[820px]:py-2 lg:px-6 lg:py-2"
+            min-[820px]:text-sm lg:text-base min-[820px]:px-4 min-[820px]:py-2 lg:px-4 lg:py-2"
           >
-            Começar Agora
-          </Link>
+            <Link href="/login">Começar Agora</Link>
+          </Button>
         </div>
 
         <div className="min-[820px]:hidden flex items-center">
           <button
             onClick={(): void => setMenuOpen(!menuOpen)}
-            aria-label="Abrir menu"
+            aria-label="Open menu"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
           >
@@ -100,19 +100,20 @@ export default function Navbar() {
           <Link
             key={link.name}
             href={link.href}
-            className="text-[#4A4E69] font-medium hover:text-[#8093F1] transition"
+            className="text-[#4A4E69] font-medium hover:text-[#8093F1] active:text-[#8093F1] transition"
             onClick={(): void => setMenuOpen(false)}
           >
             {link.name}
           </Link>
         ))}
-        <Link
-          href="#planos"
-          className="bg-[#8093F1] text-white px-6 py-2 rounded-full font-medium hover:bg-[#5C66C0] transition text-center"
-          onClick={(): void => setMenuOpen(false)}
+        <Button
+          asChild
+          className="bg-[#8093F1] text-white px-6 py-2 rounded-full font-medium hover:bg-[#5C66C0] active:bg-[#5C66C0] transition text-center"
         >
-          Começar Agora
-        </Link>
+          <Link href="/login" onClick={(): void => setMenuOpen(false)}>
+            Começar Agora
+          </Link>
+        </Button>
       </div>
     </header>
   );

@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link" 
+import { Button } from "../ui/button"
 
 export default function HeroSection () {
     return (
@@ -14,9 +16,12 @@ export default function HeroSection () {
                         Nosso chatbot inteligente aprende com suas interações e resolve problemas 24/7, para que você possa focar no crescimento do seu negócio
                     </p>
 
-                    <a href="#" className="bg-white text-[#8093F1] px-6 py-3 rounded-full font-bold hover:bg-[#5C66C0]  hover:text-white transition">
-                    Começar Agora
-                    </a>
+                    <Button 
+                        asChild
+                        className="bg-white text-[#8093F1] px-16 py-6 rounded-full font-extrabold text-xl hover:bg-[#5C66C0] transition-all duration-300 ease-in-out hover:scale-105 hover:text-white shadow-lg"
+                    >
+                        <Link href="#pricings">Começar Agora</Link>
+                    </Button>
                 </div>
                 
                 <div className="w-full lg:flex-1">
