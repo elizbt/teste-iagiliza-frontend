@@ -32,7 +32,11 @@ Para executar este projeto localmente, siga os passos abaixo.
 
 1.  **Clone o repositório:**
     ```bash
+<<<<<<< .merge_file_58LEwq
     git clone https://github.com/elizbt/teste-iagiliza-frontend.git
+=======
+    git clone [https://github.com/elizbt/teste-iagiliza-frontend.git](https://github.com/elizbt/teste-iagiliza-frontend.git)
+>>>>>>> .merge_file_xGECwP
     cd teste-iagiliza-frontend
     ```
 
